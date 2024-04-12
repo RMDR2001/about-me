@@ -6,3 +6,50 @@
     --color4: #DEEFE7;
     --color5: #FFFFFF;
 }
+
+body {
+    background-color: var(--color1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+    background-color: var(--color2);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+}
+
+main h1 {
+    font-size: 32px;
+}
+
+.nombre {
+    color: blue;
+    font-size: 40px;
+}
+
+h2 {
+    color: var(--color3);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px 50px 10px 50px;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 50px 10px 50px;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 50px 25px 50px;
+    font-size: 18px;
+}
