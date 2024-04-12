@@ -42,6 +42,20 @@ function preguntas() {
     //PREGUNTA 4
     let pregunta_4 = prompt("Soy orgullosamente arequipeño (Y/N)");
     if (pregunta_4.toUpperCase() == "Y") {
-        //console.log();
+        //console.log("CORRECTO!!!... como dice el dicho ''No en vano se nace al pie de un volcán''");
+        alert("CORRECTO!!!\nSoy un orgulloso Arequipeño, pues como dice el dicho ''No en vano se nace al pie de un volcán''");
+    } else {
+        //console.log("###ERROR###... Yo nací Arequipa!");
+        alert("###ERROR###\nYo nací en Arequipa!");
+    }
+
+    //PREGUNTA 5
+    let pregunta_5 = prompt("Como ultima pregunta...\n¿Estudié ingeniería de sistemas? (Y/N)");
+    if (pregunta_5.toUpperCase() == "Y") {
+        //console.log("CORRECTO!!!... como dice el dicho ''No en vano se nace al pie de un volcán''");
+        alert("CORRECTO!!!\nEstudié desde el 2018 y saqué mi bachiller en 2023");
+    } else {
+        //console.log("###ERROR###... Yo nací Arequipa!");
+        alert("###ERROR###\nEstudié desde el 2018 y saqué mi bachiller en 2023");
     }
 }
