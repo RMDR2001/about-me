@@ -9,6 +9,15 @@ function random(min, max) {
     return Math.floor((Match.random()*(max-min+1))+min)
 }
 
+function verificar(lista,rpta){
+    for(let i = 0; i<lista.lenght; i++){
+        if(rpta == lista[i]){
+            return true;
+        }
+        return false;
+    }
+}
+
 function preguntas() {
     let cont = 0;
     alert("Recuerda que para responder tienes que escribir y/n");
@@ -62,7 +71,7 @@ function preguntas() {
         alert("###ERROR###\nEstudié desde el 2018 y saqué mi bachiller en 2023");
     }
 
-    let pregunta_7 = prompt("Del 1 al 10, ¿cuál crees que es el número que estoy pensando?");
+    let pregunta_6 = prompt("Del 1 al 10, ¿cuál crees que es el número que estoy pensando?");
     let nro = random(1, 9)
     for (let i = 0; i <4; i++) {
         if(pregunta_7=nro) {
@@ -76,6 +85,28 @@ function preguntas() {
         }
     }
     alert("Haz acertado "+cont+" preguntas!")
+
+    let misMascotas = ["Ariel","Lola","Skipy","Chester"];
+    for(let i=1;i<=6;i++) { 
+        alert ("Hasta la actualidad he tenido 4 perritos, adivina el nombre de uno de ellos(as) --- (Tienes 6 intentos");
+        pregunta_7 = prompt("Intento "+i+"...");
+        if (verificar(misMascotas,pregunta_7)){
+            alert("Correcto! Acertaste el nombre de uno de mis perritos(as)")
+            break;
+        }
+    }
+    if (verificar(misMascotas,pregunta_7)==false){
+        alert("Te has quedado sin intentos")
+    }
+}
+
+function preguntasDRY(){
+    let cuestionario= 
+    [["¿Actualmente tengo 23 años? (Y/N)","Y"]
+    ,["Soy hincha de Universitario de Deportes (Y/N)","N"]
+    ,["Actualmente entre y compito en fútbol (Y/N)","N"]
+    ,["Soy orgullosamente arequipeño (Y/N)","Y"]
+    ,["¿Estudié ingeniería de sistemas? (Y/N)","Y"]];
 }
 
 bienvenida();
