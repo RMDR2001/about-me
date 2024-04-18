@@ -8,4 +8,4 @@ Esta página, desarrollada con ayuda de Enter Tech School, está desarrollada co
 
 ### Puntuación de Accesibilidad de Lighthouse
 
-![Puntuación_en_lighthouse](img/lighthouse.png)
+![Puntuación_en_lighthouse](img/LigthHouse%20act.2.png.png)
