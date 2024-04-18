@@ -62,7 +62,17 @@ function preguntas() {
         alert("###ERROR###\nEstudié desde el 2018 y saqué mi bachiller en 2023");
     }
 
-    let pregunta_7 = prompt("Ingresa mi número favorito");
+    let pregunta_7 = prompt("Del 1 al 10, ¿cuál crees que es mi número favorito?");
+    for (let i = 0; i <4; i++) {
+        if(pregunta_7=3) {
+            alert("CORRECTO!!! El tres es mi numero favorito!!!");
+            break;
+        } else if (pregunta_7<3){
+            alert("Intenta con un número mayor")
+        } else {
+            alert("Prueba con un número menor")
+        }
+    }
 }
 
 bienvenida();
