@@ -18,7 +18,7 @@ header{
     padding: 0;
     width: 100%;
     text-align: center;
-    position: sticky;
+    position: fixed;
 }
 
 main section { 
@@ -52,12 +52,39 @@ h2 {
 
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px 50px 10px 50px;
     font-size: 20px;
+    padding: 20px 50px 10px 0px;
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
+    padding: 5px 50px 25px 10px;
+    font-size: 18px;
+}
+
+.me p {  
     padding: 5px 50px 25px 50px;
+}
+
+.education p {  
+    padding: 5px 50px 25px 50px;
+}
+
+.enfPersonal p {  
+    padding: 5px 50px 25px 50px;
+}
+
+ol{
+    list-style-type: upper-roman;
+    padding: 5px 50px 5px 70px;
+}
+
+ul{
+    padding: 5px 50px 5px 70px;
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 50px 5px 10px;
     font-size: 18px;
 }
