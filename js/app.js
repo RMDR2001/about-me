@@ -5,8 +5,8 @@ function bienvenida() {
     alert("Hola "+user+"\nJuguemos algo: Te haré 5 preguntas sobre mí y veamos cuántas aciertas")  
 };
 
-function nroCorrecto() {
-
+function random(min, max) {
+    return Math.floor((Match.random()*(max-min+1))+min)
 }
 
 function preguntas() {
@@ -62,13 +62,14 @@ function preguntas() {
         alert("###ERROR###\nEstudié desde el 2018 y saqué mi bachiller en 2023");
     }
 
-    let pregunta_7 = prompt("Del 1 al 10, ¿cuál crees que es mi número favorito?");
+    let pregunta_7 = prompt("Del 1 al 10, ¿cuál crees que es el número que estoy pensando?");
+    let nro = random(1, 9)
     for (let i = 0; i <4; i++) {
-        if(pregunta_7=3) {
+        if(pregunta_7=nro) {
             alert("CORRECTO!!! El tres es mi numero favorito!!!");
             cont+=1;
             break;
-        } else if (pregunta_7<3){
+        } else if (pregunta_7<nro){
             alert("Intenta con un número mayor")
         } else {
             alert("Prueba con un número menor")
