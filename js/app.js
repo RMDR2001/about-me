@@ -66,6 +66,7 @@ function preguntas() {
     for (let i = 0; i <4; i++) {
         if(pregunta_7=3) {
             alert("CORRECTO!!! El tres es mi numero favorito!!!");
+            cont+=1;
             break;
         } else if (pregunta_7<3){
             alert("Intenta con un número mayor")
@@ -73,6 +74,7 @@ function preguntas() {
             alert("Prueba con un número menor")
         }
     }
+    alert("Haz acertado "+cont+" preguntas!")
 }
 
 bienvenida();
