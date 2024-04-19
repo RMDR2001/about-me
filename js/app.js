@@ -18,7 +18,31 @@ function verificar(lista,rpta){
     }
 }
 
-function pregunta1(){
+const preguntas=["¿Actualmente tengo 23 años? (Y/N)",
+"Soy hincha de Universitario de Deportes (Y/N)",
+"Actualmente entre y compito en fútbol (Y/N)",
+"Soy orgullosamente arequipeño (Y/N)",
+"Como ultima pregunta...\n¿Estudié ingeniería de sistemas? (Y/N)"];
+
+const respuestas=["Y","N","N","Y","Y"];
+
+function cuestionario(preg, rpta){
+    let score = 0;
+    for(let i = 0; i < 5; i++) {
+      let pregunta = preg[i];
+      let solucion = rpta[i];
+      let rptaUsuario = prompt(pregunta);
+      if(rptaUsuario.toLowerCase() === solucion){
+        alert("CORRECTO");
+        score++;
+      } else {
+        alert("INCORRECTO");
+      }
+    }
+    alert("Tu score es: "+score);
+  }
+
+/*function pregunta1(){
     let pregunta_1 = prompt("¿Actualmente tengo 23 años? (Y/N)");
     if (pregunta_1.toUpperCase() === "Y") {
         // console.log("CORRECTO!!!... Nací un 09 de marzo del 2001, por ende, tengo 23 años");
@@ -73,7 +97,7 @@ function pregunta5(){
     }
 }
 
-/*function preguntas() {
+function preguntas() {
     let cont = 0;
     alert("Recuerda que para responder tienes que escribir y/n");
     let pregunta_1 = prompt("¿Actualmente tengo 23 años? (Y/N)");
@@ -158,8 +182,8 @@ function pregunta5(){
 }*/
 
 bienvenida();
-pregunta1();
+/*pregunta1();
 pregunta2();
 pregunta3();
 pregunta4();
-pregunta5();
+pregunta5();*/
