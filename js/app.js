@@ -5,7 +5,7 @@ function bienvenida() {
     alert("Hola "+user+"\nJuguemos algo: Te haré 5 preguntas sobre mí y veamos cuántas aciertas")  
 };
 
-function random(min, max) {
+/*function random(min, max) {
     return Math.floor((Match.random()*(max-min+1))+min)
 }
 
@@ -16,7 +16,7 @@ function verificar(lista,rpta){
         }
         return false;
     }
-}
+}*/
 
 const preguntas=["¿Actualmente tengo 23 años? (Y/N)",
 "Soy hincha de Universitario de Deportes (Y/N)",
@@ -182,6 +182,7 @@ function preguntas() {
 }*/
 
 bienvenida();
+cuestionario(preguntas,respuestas);
 /*pregunta1();
 pregunta2();
 pregunta3();
