@@ -6,6 +6,10 @@ Esta página, desarrollada con ayuda de Enter Tech School, está desarrollada co
 
 ### Autor: Ricardo Mauricio Delgado Rivera
 
+### PairProgramming
+
+    Con apoyo de Omar Torbisco
+
 ### Puntuación de Accesibilidad de Lighthouse
 
 ![Puntuación_en_lighthouse](img/LigthHouse%20-%20v3.png)
