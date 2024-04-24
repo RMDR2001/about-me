@@ -1,4 +1,4 @@
-* {
+:root {
     /*PALETA DE COLORES: "Crevasse"*/
     --color1: #F2F2F2;
     --color2: #076DF2;
@@ -92,4 +92,17 @@ li {
     font-family: 'Times New Roman', Times, serif;
     padding: 5px 50px 5px 10px;
     font-size: 18px;
+}
+
+footer {
+    padding: 10px;
+    background: rgb(7,109,242);
+    background: linear-gradient(90deg, rgba(7,109,242,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--color1);
 }
